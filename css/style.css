@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header nav{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+}
+header a img{
+    width: 50px;
+    margin-left: 2.5rem;
+
+}
+header a span{
+    font-size: 1.9rem;
+    font-weight: border;
+    color: #000;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar li{
+    margin: 1.3rem;
+}
+.navbar li a{
+    color: #000;
+    font-size: 1.2rem;
+}
+nav .navbar li a:hover{
+    color: #FBBC05;
+    font-size: 1.3rem;
+    transform: scale(1.2);
+    transition: .10s;
+}
+.navleft{
+    display: flex;
+    gap: 1rem;
+    margin-right: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.navleft a{
+    color: #000;
+}
+
+.navleft li:last-child{
+    background-color: #FBBC05;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    color: #666;
+}
+/* main container */
+.content{
+    padding: 6rem;
+    display: flex;
+    width: 100%;
+}
+.content-text h1{
+    margin:50px 0px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content .content-text p{
+    margin-bottom:2rem;
+    font-size: 1.2rem;
+}
+.content button{
+    padding: .9rem;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.22);
+}
+.content button:hover{
+    background: #fff;
+    font-size: 1.3rem;
+    transform: scale(0.8);
+    transition: .45s;
+}
+.content .images img{
+    width: 700px;
+    line-height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/* section card */
+.card-article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.card-content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .45s;
+    background: #fff;
+}
+.card-content:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.22);
+    transform: translate(0px,-8px);
+}
+.card-content img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    border:1px solid #000;
+}
+.container{
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container .partenaire{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.partenaire .title h3{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+}
+.partenaire .title p{
+    font-size: 1rem;
+    color: #6666;
+    text-align: center;
+    margin:10px 0;
+}
+.partLogo{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+.partLogo img{
+    width: 100px;
+    height: 100px;
+    flex-wrap: nowrap;
+    margin: 0 15px;
+}
+.apropos{
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.apropos .AboutImg img{
+    width: 500px;
+    display: flex;
+    margin-left: 50px;
+}
+.apropos .About-text{
+    padding: 35px;
+    max-width: 500px;
+}
+.apropos .About-text h3{
+    font-size: 1.66rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.apropos .About-text p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #999;
+}
+.apropos .About-text span{
+    font-size: .7rem;
+    font-weight: bolder;
+    color: #000;
+}
+.detail .content-details{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 50px;
+
+}
+.text-detail{
+    background-color: #FBBC05;
+    padding: 25px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    overflow: hidden;
+}
+.text-detail h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 40px 1px 10px 50px;
+}
+.text-detail p{
+    font-weight: 500;
+    color: #222;
+    padding-left: 50px;
+}
+.detail img{
+    width: 500px;
+    height: 350px;
+}
+
+/* Experience section */
+.experience{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.experience .title-experience{
+    text-align: center;
+}
+.experience .title-experience h2{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #000;
+}
+.experience .title-experience p{
+    font-size: 0.9rem;
+    color: #666;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+.experience .title-experience button{
+    background-color: #fbe205;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #000;
+    border: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .25s;
+    cursor: pointer;
+}
+.experience .title-experience button:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.22);
+    transform: translate(0px,-5px);
+}
+.customers{
+    padding-top: 30px;
+    text-align: center;
+}
+.customers h2{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: #000;
+}
+.card-customers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.customers-content{
+    width: 20%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(233, 232, 232, 0.22);
+    transition: .45s;
+    background: #fff;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    border: 10px;
+}
+.customers-content img{
+    width: 200px;
+    height: 200px;
+}
+/* Footer*/
+.container{
+    width: 100%;
+    margin:0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+.col-footer{
+    width: 20%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+.footer .col-footer h4{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer .col-footer p{
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.footer .col-footer ul li{
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+}
+.footer .col-footer ul li a:hover{
+    color: darkorange;
+    border-bottom: 2px solid rgb(8, 7, 7);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    transform: rotate(-10,50);
+}
+.footer .col-footer ul li a{
+    color: #666;
+}
+.footer .footer-logo{
+   padding-left: 20px;
+}
+.footer .footer-logo span{
+    font-size: 1.8rem;
+    color: #000;
+    text-transform: uppercase;
+}
+.footer .col-footer input{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #999999e2;
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.footer .col-footer button{
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    background-color: #FBBC05;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin:0 20px 5px;
+}
+.end-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-footer p{
+    margin: 10px;
+}
